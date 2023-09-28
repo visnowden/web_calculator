@@ -8,32 +8,32 @@
   </head>
   <body>
     <div class="main">
-      <input type="text" id="display"></input>
+      <input type="text" id="display" disabled></input>
       <div classe="buttons">
-        <button class="button" id="">%</button>
-        <button class="button" id="">CE</button>
-        <button class="button" id="">C</button>
-        <button class="button" id="">Back</button>
-        <button class="button" id="">¹/x</button>
-        <button class="button" id="">x²</button>
-        <button class="button" id="">²Vx</button>
-        <button class="button" id="">/</button>
-        <button class="button" id="">7</button>
-        <button class="button" id="">8</button>
-        <button class="button" id="">9</button>
-        <button class="button" id="">x</button>
-        <button class="button" id="">4</button>
-        <button class="button" id="">5</button>
-        <button class="button" id="">6</button>
-        <button class="button" id="">-</button>
-        <button class="button" id="">1</button>
-        <button class="button" id="">2</button>
-        <button class="button" id="">3</button>
-        <button class="button" id="">+</button>
-        <button class="button" id="">+/-</button>
-        <button class="button" id="">0</button>
-        <button class="button" id="">,</button>
-        <button class="button" id="">=</button>
+        <button class="button error" id="">%</button>
+        <button class="button error" id="">CE</button>
+        <button class="button good" id="" onclick="clearDisplay()">C</button>
+        <button class="button good" id="" onclick="backspace()">Back</button>
+        <button class="button error" id="">¹/x</button>
+        <button class="button error" id="">x²</button>
+        <button class="button error" id="">²Vx</button>
+        <button class="button good" id="" onclick="appendToDisplay('/')">/</button>
+        <button class="button good" id="" onclick="appendToDisplay(7)">7</button>
+        <button class="button good" id="" onclick="appendToDisplay(8)">8</button>
+        <button class="button good" id="" onclick="appendToDisplay(9)">9</button>
+        <button class="button good" id="" onclick="appendToDisplay('*')">x</button>
+        <button class="button good" id="" onclick="appendToDisplay(4)">4</button>
+        <button class="button good" id="" onclick="appendToDisplay(5)">5</button>
+        <button class="button good" id="" onclick="appendToDisplay(6)">6</button>
+        <button class="button good" id="" onclick="appendToDisplay('-')">-</button>
+        <button class="button good" id="" onclick="appendToDisplay(1)">1</button>
+        <button class="button good" id="" onclick="appendToDisplay(2)">2</button>
+        <button class="button good" id="" onclick="appendToDisplay(3)">3</button>
+        <button class="button good" id="" onclick="appendToDisplay('+')">+</button>
+        <button class="button error" id="">+/-</button>
+        <button class="button good" id="" onclick="appendToDisplay(0)">0</button>
+        <button class="button" id="" onclick="appendToDisplay('')">,</button>
+        <button class="button good" id="" onclick="calculateResult()">=</button>
       </div>
       </div>
     </div>

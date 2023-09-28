@@ -1,39 +1,34 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
 body {
-  width: 100vw;
-  height: 100vh;
   background-color: #a6d6ff;
-  position: relative;
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
 .main {
-  position: relative;
-  height: 50%;
-  width: 50%;
   background-color: white;
   padding: 10px;
+  width: 50%;
 }
 #display {
   text-align: right;
-  font-size: 500%;
+  font-size: 400%;
   width: 100%;
-}
-
-.buttons {
-  position: absolute;
-  background-color: aqua;
-  width: 100%;
-  height: 100%;
 }
 .button {
-  
   background-color: black;
-  height: 24%;
-  width: 25%;
   color: white;
+  height: 24%;
+  width: 23%;
+}
+.error {
+  background-color: red;
+}
+.good{
+  background-color: green;
 }
