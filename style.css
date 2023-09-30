@@ -1,34 +1,80 @@
 * {
-  padding: 0;
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
+
 body {
-  background-color: #a6d6ff;
+  font-family: "Arial", sans-serif;
+  background-color: #151515;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  color: #333;
 }
-.main {
-  background-color: white;
-  padding: 10px;
-  width: 50%;
+
+header {
+  background-color: #000000;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  text-align: center;
 }
-#display {
-  text-align: right;
-  font-size: 400%;
+
+.container {
   width: 100%;
 }
+
+h1 {
+  font-size: 24px;
+}
+
+.main {
+  background-color: #3c415c;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+  text-align: right;
+  font-size: 1.5em;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
 .button {
-  background-color: black;
-  color: white;
-  height: 24%;
-  width: 23%;
+  background-color: #eee;
+  color: #333;
+  height: 60px;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.error {
-  background-color: red;
+
+.button:hover {
+  background-color: #ddd;
+  transition: background-color 0.3s;
 }
-.good{
-  background-color: green;
+
+.good-func {
+  background-color: #3498db;
+  color: #fff;
 }

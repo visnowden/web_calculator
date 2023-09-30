@@ -4,39 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Calculadora web</title>
+    <title>Calculadora</title>
   </head>
   <body>
-    <div class="main">
-      <input type="text" id="display" disabled></input>
-      <div classe="buttons">
-        <button class="button error" id="">%</button>
-        <button class="button error" id="">CE</button>
-        <button class="button good" id="" onclick="clearDisplay()">C</button>
-        <button class="button good" id="" onclick="backspace()">Back</button>
-        <button class="button error" id="">¹/x</button>
-        <button class="button error" id="">x²</button>
-        <button class="button error" id="">²Vx</button>
-        <button class="button good" id="" onclick="appendToDisplay('/')">/</button>
-        <button class="button good" id="" onclick="appendToDisplay(7)">7</button>
-        <button class="button good" id="" onclick="appendToDisplay(8)">8</button>
-        <button class="button good" id="" onclick="appendToDisplay(9)">9</button>
-        <button class="button good" id="" onclick="appendToDisplay('*')">x</button>
-        <button class="button good" id="" onclick="appendToDisplay(4)">4</button>
-        <button class="button good" id="" onclick="appendToDisplay(5)">5</button>
-        <button class="button good" id="" onclick="appendToDisplay(6)">6</button>
-        <button class="button good" id="" onclick="appendToDisplay('-')">-</button>
-        <button class="button good" id="" onclick="appendToDisplay(1)">1</button>
-        <button class="button good" id="" onclick="appendToDisplay(2)">2</button>
-        <button class="button good" id="" onclick="appendToDisplay(3)">3</button>
-        <button class="button good" id="" onclick="appendToDisplay('+')">+</button>
-        <button class="button error" id="">+/-</button>
-        <button class="button good" id="" onclick="appendToDisplay(0)">0</button>
-        <button class="button" id="" onclick="appendToDisplay('')">,</button>
-        <button class="button good" id="" onclick="calculateResult()">=</button>
+    <header>
+      <div class="container">
+        <h1>Calculadora</h1>
       </div>
+    </header>
+
+    <div class="main">
+      <input type="text" id="display" disabled />
+      <div class="buttons">
+        <button class="button" id="">%</button>
+        <button class="button" id="">CE</button>
+        <button class="button good-func" onclick="clearDisplay()">C</button>
+        <button class="button good-func" onclick="backspace()">Back</button>
+        <button class="button" id="">¹/x</button>
+        <button class="button" id="">x²</button>
+        <button class="button" id="">²Vx</button>
+        <button class="button good-func" onclick="appendToDisplay('/')">
+          /
+        </button>
+        <button class="button" onclick="appendToDisplay(7)">7</button>
+        <button class="button" onclick="appendToDisplay(8)">8</button>
+        <button class="button" onclick="appendToDisplay(9)">9</button>
+        <button class="button good-func" onclick="appendToDisplay('*')">
+          x
+        </button>
+        <button class="button" onclick="appendToDisplay(4)">4</button>
+        <button class="button" onclick="appendToDisplay(5)">5</button>
+        <button class="button" onclick="appendToDisplay(6)">6</button>
+        <button class="button good-func" onclick="appendToDisplay('-')">
+          -
+        </button>
+        <button class="button" onclick="appendToDisplay(1)">1</button>
+        <button class="button" onclick="appendToDisplay(2)">2</button>
+        <button class="button" onclick="appendToDisplay(3)">3</button>
+        <button class="button good-func" onclick="appendToDisplay('+')">
+          +
+        </button>
+        <button class="button" id="">+/-</button>
+        <button class="button" onclick="appendToDisplay(0)">0</button>
+        <button class="button" onclick="appendToDisplay('')">,</button>
+        <button class="button good-igual" onclick="calculateResult()">=</button>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
