@@ -1,9 +1,13 @@
 * {
-  padding: 0;
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
+
 body {
-  background-color: #a6d6ff;
+  font-family: "Arial", sans-serif;
+  background-color: #151515;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -11,7 +15,7 @@ body {
 }
 
 header {
-  background-color: #000000;
+  background-color: #000;
   color: #fff;
   width: 100%;
   position: fixed;
@@ -30,15 +34,29 @@ h1 {
 }
 
 .main {
-  background-color: white;
-  padding: 10px;
-  width: 50%;
+  background-color: #3c415c;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
+
 #display {
   text-align: right;
-  font-size: 400%;
+  font-size: 1.5em;
   width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
 .button {
   background-color: #eee;
   color: #333;
@@ -50,7 +68,9 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
 }
-
+.duble-size {
+  grid-column: span 2; /* Ocupa duas colunas no grid */
+}
 .button:hover {
   background-color: #ddd;
   transition: background-color 0.3s;

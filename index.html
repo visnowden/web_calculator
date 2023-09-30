@@ -1,54 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Calculadora</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <h1>Calculadora</h1>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Calculadora</title>
+</head>
 
-    <div class="main">
-      <input type="text" id="display" disabled />
-      <div class="buttons">
-        <button class="button good-func" onclick="clearDisplay()">C</button>
-        <button class="button good-func"></button>
-        <button class="button good-func duble-size" onclick="backspace()">
-          Back
-        </button>
-        <button class="button" onclick="appendToDisplay(7)">7</button>
-        <button class="button" onclick="appendToDisplay(8)">8</button>
-        <button class="button" onclick="appendToDisplay(9)">9</button>
-        <button class="button good-func" onclick="appendToDisplay('/')">
-          /
-        </button>
-        <button class="button" onclick="appendToDisplay(4)">4</button>
-        <button class="button" onclick="appendToDisplay(5)">5</button>
-        <button class="button" onclick="appendToDisplay(6)">6</button>
-        <button class="button good-func" onclick="appendToDisplay('*')">
-          x
-        </button>
-        <button class="button" onclick="appendToDisplay(1)">1</button>
-        <button class="button" onclick="appendToDisplay(2)">2</button>
-        <button class="button" onclick="appendToDisplay(3)">3</button>
-        <button class="button good-func" onclick="appendToDisplay('-')">
-          -
-        </button>
-        <button class="button" onclick="appendToDisplay(0)">0</button>
-        <button class="button" onclick="appendToDisplay('.')">,</button>
-        <button class="button good-igual" onclick="calculateResult()">=</button>
-        <button class="button good-func" onclick="appendToDisplay('+')">
-          +
-        </button>
-      </div>
+<body>
+  <header>
+    <div class="container">
+      <h1>Calculadora</h1>
     </div>
+  </header>
 
-    <script src="script.js"></script>
-  </body>
+  <div class="main">
+    <input type="text" id="display" disabled />
+    <div class="buttons">
+      <button class="button good-func" onclick="clearDisplay()">C</button>
+      <button class="button good-func"></button>
+      <button class="button good-func duble-size" onclick="backspace()">Back</button>
+      <button class="button" onclick="appendToDisplay(7)">7</button>
+      <button class="button" onclick="appendToDisplay(8)">8</button>
+      <button class="button" onclick="appendToDisplay(9)">9</button>
+      <button class="button good-func" onclick="appendToDisplay('/')">/</button>
+      <button class="button" onclick="appendToDisplay(4)">4</button>
+      <button class="button" onclick="appendToDisplay(5)">5</button>
+      <button class="button" onclick="appendToDisplay(6)">6</button>
+      <button class="button good-func" onclick="appendToDisplay('*')">x</button>
+      <button class="button" onclick="appendToDisplay(1)">1</button>
+      <button class="button" onclick="appendToDisplay(2)">2</button>
+      <button class="button" onclick="appendToDisplay(3)">3</button>
+      <button class="button good-func" onclick="appendToDisplay('-')">-</button>
+      <button class="button" onclick="appendToDisplay(0)">0</button>
+      <button class="button" onclick="appendToDisplay('.')">,</button>
+      <button class="button good-igual" onclick="calculateResult()">=</button>
+      <button class="button good-func" onclick="appendToDisplay('+')">+</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
