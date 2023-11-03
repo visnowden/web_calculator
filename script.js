@@ -1,3 +1,4 @@
+let display = document.getElementById('display').value
 let operations = ['/', '+', '-', '*', '.']
 let displayValueSystem = ''
 let displayValue = ''
@@ -12,19 +13,19 @@ function appendToDisplay(value) {
     }
     displayValueSystem += value
     userVision()
-    document.getElementById('display').value = displayValue
+    display = displayValue
 }
 
 function clearDisplay() {
     displayValueSystem = ''
     userVision()
-    document.getElementById('display').value = displayValue
+    display = displayValue
 }
 
 function backspace() {
     displayValueSystem = displayValueSystem.slice(0, -1)
     userVision()
-    document.getElementById('display').value = displayValue
+    display = displayValue
 }
 
 function calculateResult() {
@@ -33,9 +34,9 @@ function calculateResult() {
     if (!isFinite(displayValueSystem)) {
         displayValueSystem = ''
         userVision()
-        document.getElementById('display').value = 'Erro'
+        display = 'Erro'
     } else {
-        document.getElementById('display').value = displayValue
+        display = displayValue
     }
 }
 
