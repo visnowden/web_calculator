@@ -1,34 +1,62 @@
 let operations = ['/', '+', '-', '*', '.']
+let displayValueSystem = ''
 let displayValue = ''
 
 function appendToDisplay(value) {
     if (operations.includes(value)) {
-        if (operations.includes(displayValue.slice(-1))) {
-            displayValue = displayValue.slice(0, -1)
-        } else if (displayValue == '') {
+        if (operations.includes(displayValueSystem.slice(-1))) {
+            displayValueSystem = displayValueSystem.slice(0, -1)
+        } else if (displayValueSystem == '') {
             value = ''
         }
     }
-    displayValue += value
+    displayValueSystem += value
+    userVision()
     document.getElementById('display').value = displayValue
 }
 
 function clearDisplay() {
-    displayValue = ''
+    displayValueSystem = ''
+    userVision()
     document.getElementById('display').value = displayValue
 }
 
 function backspace() {
-    displayValue = displayValue.slice(0, -1)
+    displayValueSystem = displayValueSystem.slice(0, -1)
+    userVision()
     document.getElementById('display').value = displayValue
 }
 
 function calculateResult() {
-    displayValue = String(parseFloat(eval(displayValue).toFixed(3)))
-    if (!isFinite(displayValue)) {
-        displayValue = ''
+    displayValueSystem = String(parseFloat(eval(displayValueSystem).toFixed(3)))
+    userVision()
+    if (!isFinite(displayValueSystem)) {
+        displayValueSystem = ''
+        userVision()
         document.getElementById('display').value = 'Erro'
     } else {
         document.getElementById('display').value = displayValue
+    }
+}
+
+function userVision() {
+    displayValue = ''
+    for (var i = 0; i < displayValueSystem.length; i++) {
+        switch (displayValueSystem[i]) {
+            case '.':
+                displayValue += ','
+                break
+            case '*':
+                displayValue += '.'
+                break
+            case '/':
+                displayValue += '÷'
+                break
+            case '-':
+                displayValue += '−'
+                break
+            default:
+                displayValue += displayValueSystem[i]
+        }
     }
 }
