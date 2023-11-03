@@ -1,4 +1,3 @@
-let display = document.getElementById('display').value
 let operations = ['/', '+', '-', '*', '.']
 let displayValueSystem = ''
 let displayValue = ''
@@ -13,19 +12,19 @@ function appendToDisplay(value) {
     }
     displayValueSystem += value
     userVision()
-    display = displayValue
+    document.getElementById('display').value = displayValue
 }
 
 function clearDisplay() {
     displayValueSystem = ''
     userVision()
-    display = displayValue
+    document.getElementById('display').value = displayValue
 }
 
 function backspace() {
     displayValueSystem = displayValueSystem.slice(0, -1)
     userVision()
-    display = displayValue
+    document.getElementById('display').value = displayValue
 }
 
 function calculateResult() {
@@ -34,16 +33,16 @@ function calculateResult() {
     if (!isFinite(displayValueSystem)) {
         displayValueSystem = ''
         userVision()
-        display = 'Erro'
+        document.getElementById('display').value = 'Erro'
     } else {
-        display = displayValue
+        document.getElementById('display').value = displayValue
     }
 }
 
 function userVision() {
     displayValue = ''
-    for (var i = 0; i < displayValueSystem.length; i++) {
-        switch (displayValueSystem[i]) {
+    for(var i = 0; i < displayValueSystem.length; i++) {
+        switch(displayValueSystem[i]) {
             case '.':
                 displayValue += ','
                 break
