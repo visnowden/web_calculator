@@ -19,7 +19,7 @@ function calculateResult() {
     }
     document.getElementById("display").value = displayValue
   } catch (error) {
-    displayValue = "Erro"
-    document.getElementById("display").value = displayValue
+    displayValue = ""
+    document.getElementById("display").value = "Erro"
   }
 }
