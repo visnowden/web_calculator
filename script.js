@@ -24,14 +24,11 @@ function backspace() {
 }
 
 function calculateResult() {
-    try {
-        displayValue = String(parseFloat(eval(displayValue).toFixed(3)))
-        if (displayValue == Infinity) {
-            displayValue = 'Erro'
-        }
-        document.getElementById('display').value = displayValue
-    } catch (error) {
+    displayValue = String(parseFloat(eval(displayValue).toFixed(3)))
+    if (!isFinite(displayValue)) {
         displayValue = ''
         document.getElementById('display').value = 'Erro'
+    } else {
+        document.getElementById('display').value = displayValue
     }
 }
