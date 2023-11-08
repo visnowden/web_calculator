@@ -1,27 +1,27 @@
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 body {
   font-family: "Arial", sans-serif;
   background-color: #151515;
-  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  display: flex;
   color: #333;
 }
 header {
   background-color: #000;
+  text-align: center;
+  position: fixed;
+  padding: 10px0;
   color: #fff;
   width: 100%;
-  position: fixed;
-  top: 0;
   left: 0;
-  padding: 10px0;
-  text-align: center;
+  top: 0;
 }
 .container {
   width: 100%;
@@ -30,46 +30,46 @@ h1 {
   font-size: 24px;
 }
 .main {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background-color: #3c415c;
+  border-radius: 10px;
   padding: 20px;
   width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 #display {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
   text-align: right;
   font-size: 1.5em;
-  width: 100%;
-  margin-bottom: 10px;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  width: 100%;
 }
 
 .buttons {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
+  display: grid;
   gap: 10px;
 }
 
 .button {
   background-color: #eee;
+  border: 1pxsolid#ddd;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.5em;
+  cursor: pointer;
   color: #333;
   height: 60px;
   width: 100%;
-  border: 1pxsolid#ddd;
-  font-size: 1.5em;
-  text-align: center;
-  border-radius: 5px;
-  cursor: pointer;
 }
 .duble-size {
   grid-column: span 2; /* Ocupa duas colunas no grid */
 }
 .button:hover {
+  transition: background-color 0.3s;
   background-color: #ddd;
-  transition: background-color0.3s;
 }
 .operation {
   background-color: #3498db;
