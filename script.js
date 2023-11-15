@@ -16,7 +16,7 @@ function appendToDisplay(value) {
 }
 
 function clearDisplay() {
-    displayValueSystem = ''
+    displayValueSystem = '0'
     userVision()
     document.getElementById('display').value = displayValue
 }
