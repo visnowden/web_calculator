@@ -31,7 +31,6 @@ h1 {
   padding: 20px;
   width: 300px;
 }
-
 #display {
   border: 1px solid #fff;
   margin-bottom: 10px;
@@ -41,13 +40,11 @@ h1 {
   padding: 8px;
   width: 100%;
 }
-
 .buttons {
   grid-template-columns: repeat(4, 1fr);
   display: grid;
   gap: 10px;
 }
-
 .button {
   background-color: #eee;
   border: 2px solid #000;
