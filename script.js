@@ -16,9 +16,9 @@ function appendToDisplay(value) {
 }
 
 function clearDisplay() {
-    displayValueSystem = "0";
+    displayValueSystem = "";
     userVision();
-    document.getElementById("display").value = displayValue;
+    document.getElementById("display").value = 0;
 }
 
 function backspace() {
