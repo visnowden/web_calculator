@@ -7,7 +7,7 @@ body {
   background-color: #001;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 110vh;
   display: flex;
 }
 header {
@@ -59,9 +59,9 @@ h1 {
 .duble-size {
   grid-column: span 2;
 }
-.button:hover {
-  transition: background-color 0.2s;
-  background-color: #ddd;
+.button:active {
+  background-color: #333;
+  color: #fff;
 }
 .operation {
   background-color: #3498db;
