@@ -7,7 +7,7 @@ body {
   background-color: #001;
   justify-content: center;
   align-items: center;
-  min-height: 110vh;
+  height: 100vh;
   display: flex;
 }
 header {
@@ -30,6 +30,7 @@ h1 {
   border-radius: 10px;
   padding: 20px;
   width: 300px;
+  height: 445px;
 }
 #display {
   border: 1px solid #fff;
