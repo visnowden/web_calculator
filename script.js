@@ -10,7 +10,7 @@ function appendToDisplay(value) {
         }
     }
     if (!Boolean(displayValueSystem) & value == 0) {
-        
+        value = ''
     }
     displayValueSystem += value
     userVision()
