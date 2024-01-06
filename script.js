@@ -9,7 +9,9 @@ function appendToDisplay(value) {
             value = ''
         }
     }
-    if (!Boolean(displayValueSystem)) {}
+    if (!Boolean(displayValueSystem)) {
+        
+    }
     displayValueSystem += value
     userVision()
     document.getElementById('display').value = displayValue
