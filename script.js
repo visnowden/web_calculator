@@ -9,7 +9,7 @@ function appendToDisplay(value) {
             value = ''
         }
     }
-    if (!Boolean(displayValueSystem)) {
+    if (!Boolean(displayValueSystem) & value == 0) {
         
     }
     displayValueSystem += value
