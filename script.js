@@ -12,7 +12,9 @@ function appendToDisplay(value) {
     if (!displayValueSystem & value == 0) {
         value = ''
     }
-    
+    if (value == '.') {
+        
+    }
     displayValueSystem += value
     userVision()
     document.getElementById('display').value = displayValue
