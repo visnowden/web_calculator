@@ -15,10 +15,6 @@ function appendToDisplay(value) {
 
     if (!displayValueSystem & value == 0) {
         value = ''
-        console.log(`
-if (!displayValueSystem & value == 0) {
-value = ''
-}`)
     }
     if (value == '' & !displayValueSystem.includes('')) {
         value = '0.'
