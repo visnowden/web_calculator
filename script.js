@@ -18,10 +18,6 @@ function appendToDisplay(value) {
     }
     if (value == '' & !displayValueSystem.includes('')) {
         value = '0.'
-        console.log(`
-if (value == '' & !displayValueSystem.includes('')) {
-value = '0.'
-}`)
     }
     displayValueSystem += value
     userVision()
