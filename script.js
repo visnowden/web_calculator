@@ -12,7 +12,7 @@ function appendToDisplay(value) {
     if (!displayValueSystem & value == 0) {
         value = ''
     }
-    if (value == '.') {
+    if (value == '.' & !displayValueSystem.includes('.')) {
         
     }
     displayValueSystem += value
