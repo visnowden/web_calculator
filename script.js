@@ -2,12 +2,12 @@ let operations = ['/', '+', '-', '*', '.']
 let displayValueSystem = displayValue = ''
 
 function appendToDisplay(value) {
-        if (operations.includes(displayValueSystem.slice(-1))) {
-            displayValueSystem = displayValueSystem.slice(0, -1)
-        } else if (displayValueSystem == '') {
-            value = ''
-        }
-    
+    if (operations.includes(displayValueSystem.slice(-1))) {
+        displayValueSystem = displayValueSystem.slice(0, -1)
+    } else if (displayValueSystem == '') {
+        value = ''
+    }
+
     if (!displayValueSystem & value == 0) {
         value = ''
     }
@@ -50,18 +50,18 @@ function userVision() {
             case '.':
                 displayValue += ','
                 break
-                case '*':
+            case '*':
                 displayValue += '.'
                 break
-                case '/':
+            case '/':
                 displayValue += '÷'
                 break
-                case '-':
+            case '-':
                 displayValue += '−'
                 break
-                default:
+            default:
                 displayValue += displayValueSystem[i]
-            }
+        }
     }
     if (displayValue == '') {
         displayValue = '0'
