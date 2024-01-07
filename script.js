@@ -1,18 +1,38 @@
-let operations = ['/', '+', '-', '*', '.']
+let operations = ['/', '+', '-', '*', '']
 let displayValueSystem = displayValue = ''
 
 function appendToDisplay(value) {
+    
+    if (operations.includes(value)) {
     if (operations.includes(displayValueSystem.slice(-1))) {
         displayValueSystem = displayValueSystem.slice(0, -1)
-    } else if (displayValueSystem == '') {
+        console.log(`
+if (operations.includes(displayValueSystem.slice(-1))) {
+displayValueSystem = displayValueSystem.slice(0, -1)
+}`)
+    }}
+    
+    else if (displayValueSystem == '') {
         value = ''
+        console.log(`
+else if (displayValueSystem == '') {
+value = ''
+}`)
     }
 
     if (!displayValueSystem & value == 0) {
         value = ''
+        console.log(`
+if (!displayValueSystem & value == 0) {
+value = ''
+}`)
     }
-    if (value == '.' & !displayValueSystem.includes('.')) {
+    if (value == '' & !displayValueSystem.includes('')) {
         value = '0.'
+        console.log(`
+if (value == '' & !displayValueSystem.includes('')) {
+value = '0.'
+}`)
     }
     displayValueSystem += value
     userVision()
@@ -47,11 +67,11 @@ function userVision() {
     displayValue = ''
     for (var i = 0; i < displayValueSystem.length; i++) {
         switch (displayValueSystem[i]) {
-            case '.':
+            case '':
                 displayValue += ','
                 break
             case '*':
-                displayValue += '.'
+                displayValue += ''
                 break
             case '/':
                 displayValue += '÷'
