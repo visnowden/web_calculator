@@ -6,10 +6,6 @@ function appendToDisplay(value) {
     if (operations.includes(value)) {
         if (operations.includes(displayValueSystem.slice(-1))) {
             displayValueSystem = displayValueSystem.slice(0, -1)
-            console.log(`
-if (operations.includes(displayValueSystem.slice(-1))) {
-displayValueSystem = displayValueSystem.slice(0, -1)
-}`)
         }
     }
 
