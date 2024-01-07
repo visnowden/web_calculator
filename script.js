@@ -13,7 +13,7 @@ function appendToDisplay(value) {
         value = ''
     }
     if (value == '.' & !displayValueSystem.includes('.')) {
-        
+        value = '0.'
     }
     displayValueSystem += value
     userVision()
