@@ -4,8 +4,8 @@
 }
 body {
   font-family: "Arial", sans-serif;
-  background-color: #001;
   justify-content: center;
+  background-color: #001;
   align-items: center;
   height: 100vh;
   display: flex;
